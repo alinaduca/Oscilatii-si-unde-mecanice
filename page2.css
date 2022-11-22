@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+  
+h1, h2, h3, h4, p, ol, ul, dl {
+  margin: 10px 20px 10px 20px;
+}
+  
+li {
+  margin-left: 30px;
+}
+
+dt {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 25px;
+}
+
+body {                                   
+  background-image: url('imagini/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-family: Verdana;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h1 {
+  padding: 30px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p {                      
+  line-height: 1.3;
+}
+
+ul, ol {                                     
+  line-height: 1.4;
+}
+  
+em.Begriff {                          
+  font-style: normal;
+  color: blue;
+}
+  
+hr.Trennlinie {                        
+  margin: 20px auto 20px auto;
+  width: 40%;
+  border-bottom: solid thin blue;
+}
+
+a:link {                    
+  color: black;
+  text-decoration: none;
+  font-family: verdana;
+  font-size: 17px;
+}
+  
+a:visited {                            
+  color: black;
+  text-decoration: none;
+  font-family: verdana;
+  font-size: 17px;
+}
+
+a:hover {                                   
+  color: #ffffff;
+  text-decoration: none;
+  font-family: verdana;
+  font-size: 17px;
+}
+  
+span.nobr {
+  white-space: nowrap;
+}
+
+span.Formel {
+  background-color: #00e0ff;
+  border: 4px solid #000000;
+  padding: 8px;
+  text-align: center;
+  font-size: 20px;
+}
+
+p.Formel {
+  font-family: monospace;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+div.Def {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: #80ffa0;
+  border: 8px double #000000;
+  font-size: 18px;
+}
+
+div.Satz {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: #ff80a0;
+  border: 8px double #000000;
+  font-size: 18px;   
+}
+
+div#Index {
+  width: 170px; 
+  margin: 20px auto 20px auto;
+  border: 5px double #000000;
+  background-color: silver;
+}
+  
+div#Index1 {
+  padding: 12px;
+  border: 1px solid #000000;
+  text-align: center;
+}
+  
+div#Index2 {
+  padding: 8px;
+  border: 1px solid #000000;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0000ff;
+}
+
+p.Ende {                                
+  font-size: 10pt;                           
+}
+   
+div#total {
+  position: relative;
+  margin-top: 20px;
+  margin-left: auto; margin-right: auto;
+}
+
+div#canvas {
+  position: absolute;
+  border: 1px solid #000000;
+}
+ 
+div#panel, div#panel1, div#panel2 {
+  position: absolute;
+  background-color: #1a968d;
+  border: 1px solid #000000;
+  font-size: 12px;
+  font-weight: bold;
+}
+  
+div#panel div , div#panel1 div, div#panel2 div {
+  position: absolute;
+}
+  
+div#panel span, div#panel1 span, div#panel2 span {
+  position: absolute;
+  white-space: nowrap;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+  
+button {
+  height: 30px;
+  border-radius: 0px;
+  margin-left: 10px;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+input[type="checkbox"] {
+  margin-left: 10px;
+  border-radius: 0px;
+}
+
+input[type="radio"] {
+  margin-left: 10px;
+}
+  
+label {
+  margin-left: 5px;
+  vertical-align: 2px;
+}
+
+input[type="text"] {
+  position: absolute;
+  padding-left: 2px;
+  height: 14px;
+  border-radius: 0px;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+select {
+  position: absolute;
+  top: -2px;
+  left: 10px;
+  height: 20px;
+  border-radius: 0px;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+input[type="range"] {
+  position: absolute;
+  left: 10px;
+}
+
+textarea {
+  position: absolute;
+  padding: 3px;
+  left: 10px;
+  border-radius: 0px;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+ 
+div#total { 
+  width: 780px; 
+  height: 420px;
+}
+
+div#canvas { 
+  width: 500px; 
+  height: 420px; 
+}
+
+div#panel { 
+  left: 500px; 
+  width: 280px; 
+  height: 420px; 
+}
+ 
+input[type="text"] {
+  left: 170px; 
+  width: 60px; 
+}
+
+button {
+  left: 10px; 
+  width: 260px;
+}
+
+.pos1 { 
+  left: 10px; 
+}
+
+.pos3 { 
+  left: 245px; 
+}
+
+.content {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  background-color: white;
+}
+
+#rcorners {
+  border-radius: 5px 100px;
+  padding: 20px;
+}
+
+#corners {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 18px;
+  background: black;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 3px 3px 5px grey; 
+  border-radius: 10px;
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0a4e57;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1a968e;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.but {
+  background: #1a968e;
+  width: 100%;
+}
+
+.but:hover {
+  background: #0a4e57;
+}
+
+sup {
+  font-size: 10px;
+}
+
+input{
+  color: rgb(26, 150, 141);
+}
+
+table, th, td {
+  border: 1px solid black;
+  background: #1a968e;
+  text-align: center;
+  margin-left: 12px;
+  border-collapse: collapse;
+}
+
+table {
+  border: 2px solid black;
+}

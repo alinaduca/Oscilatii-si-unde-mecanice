@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+
+<head>
+<link rel="icon" href="battle-net-brands.svg">
+<title>Modelare - Pendulul elastic</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="page2.css">
+<script src="pendul.js"></script>
+<script src="pendul2.js"></script>
+</head>
+
+<body>
+<div class="content" id = "rcorners">
+<br/><h1>Modelare - Pendulul elastic</h1>
+<br/>
+<p>&emsp;&emsp;Această diagramă ilustrează variațiile în timp ale alungirii, vitezei, accelerației, forței și energiei unui 
+<em>pendul elastic</em> (fără frecare) în timpul oscilației.</p>
+<p>&emsp;&emsp;Butonul „Reset” aduce corpul pendulului în poziția inițială. Se poate porni, opri și continua simularea cu celalalte două butoane. 
+Dacă se alege opțiunea „Mișcare încetinită”, mișcarea va fi de zece ori mai lentă. Constanta elastică a pendulului, masa, accelerația 
+gravitațională și amplitudinea oscilației pot fi schimbate între anumite limite. Pentru a selecta mărimea fizică a cărei dependență de timp se 
+reprezintă grafic, se apasă pe butonul radio corespunzător.</p>
+<div id="total">
+  <div id="canvas"><canvas id="cv" width=500 height=420>This browser doesn't support HTML5 canvas!</canvas></div>
+  <div id="panel">
+    <div style="top: 10px;"><button id="bu1" style="background-color: #000000; border-radius: 15px; color: white; border: none;"></button></div>
+    <div style="top: 50px;"><button id="bu2" style="background-color: #000000; border-radius: 15px; color: white; border: none;"></button></div>
+    <div style="top: 95px;"><input type="checkbox" id="cbSlow" name="cbSlow" value=""><label for="cbSlow" id="lbSlow"></label></div>
+    <div style="top: 130px;"><span class="pos1" id="ipDa"></span><input type="text" id="ipDb"><span class="pos3" id="ipDc"></span></div>
+    <div style="top: 160px;"><span class="pos1" id="ipMa"></span><input type="text" id="ipMb"><span class="pos3" id="ipMc"></span></div>
+    <div style="top: 180px;"><span class="pos1" id="ipGx"></span></div>
+    <div style="top: 195px;"><span class="pos1" id="ipGa"></span><input type="text" id="ipGb"><span class="pos3" id="ipGc"></span></div>
+    <div style="top: 225px;"><span class="pos1" id="ipAa"></span><input type="text" id="ipAb"><span class="pos3" id="ipAc"></span></div>
+    <div style="top: 255px;"><input type="radio" id="rbY" name="bg" value=""><label for="rbY" style="color: #ff0000;" id="lbY"></label></div>
+    <div style="top: 280px;"><input type="radio" id="rbV" name="bg" value=""><label for="rbV" style="color: #ff00ff;" id="lbV"></label></div>
+    <div style="top: 305px;"><input type="radio" id="rbA" name="bg" value=""><label for="rbA" style="color: #0000ff;" id="lbA"></label></div>
+    <div style="top: 330px;"><input type="radio" id="rbF" name="bg" value=""><label for="rbF" style="color: #008020;" id="lbF"></label></div>
+    <div style="top: 355px;"><input type="radio" id="rbE" name="bg" value=""><label for="rbE" style="color: #000000;" id="lbE"></label></div>
+    <div style="top: 390px;"><span class="pos1"></span></div>
+  </div>
+</div><br/><br/>
+<div align="center"><button class="but"><a href="index.html">Oscilații și unde mecanice</a></button>
+<button class="but"><a href="pag1.html">Oscilatorul mecanic</a></button>
+<button class="but"><a href="pag2.html">Mărimi caracteristice mișcării oscilatorii</a></button>
+<button class="but"><a href="pag3.html">Pendulul gravitațional</a></button>
+<button class="but"><a href="pag4.html">Unde mecanice</a></button>
+<button class="but"><a href="pag5.html">Lucrări de laborator</a></button>
+<button class="but" style="border-radius: 0px 0px 0px 30px;"><a href="verificare.html">Verifică-te!</a></button></div>
+</div>
+<script>endPage();</script>
+</body>
+</html>

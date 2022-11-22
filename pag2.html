@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+
+<head>
+<link rel="icon" href="imagini/battle-net-brands.svg">
+<title>Mărimi caracteristice mișcării oscilatorii</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="page2.css">
+<script src="pendul.js"></script>
+<script src="pendul2.js"></script>
+</head>
+<body>
+<div class="content" id = "rcorners">
+<br/><h1>Mărimi caracteristice mișcării oscilatorii</h1><br/>
+<p>&emsp;&emsp;<b><em>Perioada</em></b> – reprezintă timpul necesar efectuării unei oscilaţii complete.</p>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="imagini/perioada.png">
+<p style="font-family: cambria math; font-size: 18px;">&emsp;&emsp;&emsp;&emsp;[T]<sub>SI</sub> = 1s</p>
+<p>&emsp;&emsp;<b><i>Frecvenţa</i></b> – reprezintă numărul de oscilaţii efectuate în intervalul de timp.</p>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="imagini/frecventa.png">
+<p>&emsp;&emsp;<b><i>Elongaţia</i></b> – reprezintă distanţa faţă de poziţia de echilibru la care se află oscilatorul la un moment dat.</p>
+<p style="font-family: cambria math; font-size: 18px;">&emsp;&emsp;&emsp;&emsp;[y]<sub>SI</sub> = 1m</p>
+<p>&emsp;&emsp;<b><i>Amplitudinea</i></b> – reprezintă elongaţia maximă, se notează cu A și se măsoară în metri.</p>
+<p style="font-family: cambria math; font-size: 18px;">&emsp;&emsp;&emsp;&emsp;A = |y<sub>max</sub>|</p>
+<p>&emsp;&emsp;Amplitudinea este, conform definiției, pozitivă întotdeauna. Ea reprezintă distanța dintre poziția de echilibru și punctul de întoarcere. </p>
+<img src="imagini/amplitudinea.png" class="center">
+<p>&emsp;&emsp;Se numește mișcare oscilatorie neamortizată acea mișcare oscilatorie în care amplitudinea nu se schimbă de la o oscilație la alta.</p>
+<p>&emsp;&emsp;Mișcarea oscilatorie neamortizată este un model ideal. În practică, datorită frecărilor, sistemul pierde energie
+și, corespunzător, amplitudinea oscilațiilor devine din ce în ce mai mică.</p><br/>
+<h3 align="center">Ecuaţiile mișcării oscilatorii armonice.</h3><br/>
+<p>&emsp;&emsp;&emsp;&emsp;Ecuația elongației:<br/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;y = A∙sin(ωt + φ<sub>0</sub>),&emsp;&ensp; y<sub>max</sub> = A</p>
+<img src="imagini/elongatia.png" title="Legea de mișcare" class="center" style="width: 25%">
+<p>&emsp;&emsp;&emsp;&emsp;Ecuația vitezei:<br/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;v = ωA∙cos(ωt + φ<sub>0</sub>),&ensp; v<sub>max</sub> = ωA</p>
+<img src="imagini/viteza.png" title="Legea vitezei" class="center" style="width: 25%">
+<p>&emsp;&emsp;&emsp;&emsp;Ecuația accelerației:<br/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;a = -ω<sup style="font-size: 10px;">2</sup>A∙sin(ωt + φ<sub>0</sub>),
+a<sub>max</sub> = ω<sup style="font-size: 10px;">2</sup>A</p>
+<img src="imagini/acceleratia.png" title="Legea accelerației" class="center" style="width: 25%"><br/><br/>
+<h3 align="center">Compunerea oscilațiilor paralele</h3><br/>
+<p>&emsp;&emsp;Considerăm cazul în care punctul material execută simultan două oscilații având aceeași direcție și aceeași pulsație ω, dar amplitudini și faze inițiale diferite:</p>
+<p align="center">y<sub>1</sub>(t) = A<sub>1</sub>∙sin(ωt + φ<sub>01</sub>),<br/>
+y<sub>2</sub>(t) = A<sub>2</sub>∙sin(ωt + φ<sub>02</sub>).</p><p>&emsp;&emsp;Mișcarea rezultantă va fi dată de relația:</p>
+<p align="center">y(t) = y<sub>1</sub>(t) + y<sub>2</sub>(t).</p>
+<p style="margin-top: auto; margin-bottom:auto; display: flex;">&emsp;&emsp;Notând&nbsp;<img src="imagini/tg.png" style="margin-top: -14px;">&nbsp;și folosind cele două expresii precedente
+în această relație obținem:</p><img src="imagini/A.png" style="margin-left: auto; margin-right: auto; display: block;">
+<p>&emsp;&emsp;Observăm că mișcarea rezultantă este tot o oscilație armonică, având aceeași direcție și aceeași pulsație ω, dar având faza inițială φ definită mai sus și având
+amplitudinea:</p><img src="imagini/oscilatii_paralele.png" style="margin-left: auto; margin-right: auto; display: block;">
+<p><b style="color: blue;">&emsp;&emsp;Observații:</b> <br/>&emsp;<b>1)</b> ∆φ = φ<sub>02</sub> - φ<sub>01</sub> = 2k<span style="font-family: cambria math; font-size: 20px;">π</span>,
+k ∈ {0, 1, 2, ...}, cos∆φ = cos(2k<span style="font-family: cambria math; font-size: 20px;">π</span>) = 1, atunci A = A<sub>1</sub> + A<sub>2</sub> (oscilații în fază).<br/>
+&emsp;<b>2)</b> ∆φ = φ<sub>02</sub> - φ<sub>01</sub> = (2k + 1)∙<span style="font-family: cambria math; font-size: 20px;">π</span>,
+k ∈ {0, 1, 2, ...}, cos∆φ = cos(2k + 1)∙<span style="font-family: cambria math; font-size: 20px;">π</span> = -1, atunci A = |A<sub>2</sub> - A<sub>1</sub>| (oscilații în opoziție de
+fază).</p><h4 style="margin-top: 2%;" align="center">Metoda fazorială</h4><br/>
+<p>&emsp;&emsp;Considerăm cazul în care punctul material execută simultan două mișcări oscilatorii pe aceeași direcție și cu aceeași pulsație ω, dar având amplitudini și faze
+inițiale diferite:</p><img src="imagini/metoda_fazoriala.png" align="right"><p align="center">y<sub>1</sub>(t) = A<sub>1</sub>∙sin(ωt + φ<sub>01</sub>),<br/>
+y<sub>2</sub>(t) = A<sub>2</sub>∙sin(ωt + φ<sub>02</sub>).</p><p>&emsp;&emsp;Mișcarea rezultantă va fi dată de relația:</p>
+<p align="center">y(t) = y<sub>1</sub>(t) + y<sub>2</sub>(t).</p><p>&emsp;&emsp;Așa cum se vede din figură, y(t) este proiecția pe axa Oy a fazorului:</p>
+<img src="imagini/vectori.png" style="margin-left: auto; margin-right: auto; display: block;"><p>&emsp;&emsp;Faza inițială a mișcării rezultante este dată de unghiul φ<sub>0</sub> pe care îl
+face inițial fazorul rezultant <img src="imagini/vector.png">cu axa Ox. Astfel, compunând fazorial oscilațiile armonice paralele, se regăsesc rezultatele obținute prin metoda analitică.</p>
+<img src="imagini/tangenta.png" style="margin-left: auto; margin-right: auto; display: block;"><br/><h3 align="center">Compunerea oscilațiilor perpendiculare de aceeași frecvență</h3><br/>
+<p>&emsp;&emsp;Un punct material P este supus simultan acțiunii a două oscilații perpendiculare cu aceeași frecvență ca în figură.</p><img src="imagini/osc.png" style="margin-left: 25%;">
+<img src="imagini/oscilatii_perpendiculare.png" style="margin-left: 10%;">
+<p>&emsp;&emsp;În funcție de valorile diferenței de fază Δφ = φ<sub>2</sub> – φ<sub>1</sub>, traiectoria mișcării rezultante poate avea diferite forme:<img
+src="imagini/miscare_liniar_armonica.png" align="right"><br/>&emsp;<b>1)</b> dacă Δφ = 2k<span style="font-family: cambria math; font-size: 20px;">π</span>, k ∈ {0, 1, 2, ...}, atunci:<br/>
+<img src="imagini/miscare_liniara.png" style="margin-left: 10%;"><br/>&emsp;&emsp;Punctul material efectuează o mișcare liniar armonică.<br/>
+<b>&emsp;2)</b> dacă Δφ = (2k + 1)∙<span style="font-family: cambria math; font-size: 20px;">π</span>, k ∈ {0, 1, 2, ...}, atunci:<br/>
+<img src="imagini/miscare_liniara_1.png" style="margin-left: 10%;"><br/>&emsp;&emsp;Punctul material efectuează aceeași mișcare liniar armonică, dar pe cealaltă diagonală a dreptunghiului
+din figură.<p/><p style="margin-top: auto; margin-bottom:auto; display: flex;"><b>&emsp;3)</b> dacă Δφ =&nbsp;<img src="imagini/pipedoi.png" style="margin-top: -11px;">, atunci mișcările
+oscilatorii sunt la cvadratură:</p><p><img src="imagini/elipsa.png" style="margin-left: 10%; margin-top: -5px;"><br/>&emsp;&emsp;Punctul material efectuează o mișcare care urmează o
+traiectorie eliptică.</p><img src="imagini/miscare_eliptica.png" style="margin-left: auto; margin-right: auto; display: block;"><p>&emsp;&emsp;Dacă A<sub>1</sub> = A<sub>2</sub> = A, 
+punctul material efectuează o mișcare care urmează traiectoria unui cerc.</p><p style="margin-left: 11%;">x<sup>2</sup> + y<sup>2</sup> = A<sup>2</sup></p><img src="imagini/cerc.png"
+style="margin-left: auto; margin-right: auto; display: block;"><p style="margin-top: auto; margin-bottom: auto; display: flex;"><b>&emsp;4)</b>&nbsp;dacă&nbsp;<img
+src="imagini/treipipedoi.png" style="margin-top: -8px;">, atunci mișcarea lui P va avea loc tot pe o elipsă, dar în sens contrar celui anterior.</p><p><img src="imagini/elipsa_1.png"
+style="margin-left: 10%;"><br/>&emsp;&emsp;Pentru A<sub>1</sub> = A<sub>2</sub> = A, punctul material efectuează o mișcare care urmează traiectoria unui cerc.</p>
+<p>&emsp;&emsp;<b style="color: blue;">Observații</b><br/>&emsp;<b>1)</b> Suprapunând două mișcări circulare de sensuri opuse, cu fazele egale în modul, se obține o oscilație armonică
+liniară cu amplitudine dublă descrisă de ecuația x = 2A<sub>1</sub>∙sin(ωt + φ).</p><img src="imagini/suprapunere.png" style="margin-left: auto; margin-right: auto; display: flex; width:
+35%;"><p>&emsp;<b>2)</b> O oscilație armonică liniară poate fi descompusă în două mișcări circulare de aceeași frecvență, cu sensuri opuse și amplitudini pe jumătate. Această
+descompunere este utilă pentru legătura dintre lumina polarizată circular.</p><br/><h3 align="center">Compunerea oscilațiilor perpendiculare de frecvențe diferite</h3><br/>
+<p>&emsp;&emsp;Dacă punctul material P este supus simultan acțiunii a două mișcări oscilatorii perpendiculare cu frecvențe diferite, traiectoria sa va fi complexă. Pentru un raport
+rațional al frecvențelor, traiectoriile vor fi stabile, dar dependente de diferența lor de fază, figurile rezultate fiind numite figuri <i>Lissajoux</i>. Dacă se utilizează două axe,
+orizontală și verticală, și se face raportul dintre numărul punctelor de tangență a traiectoriei cu axele se obține raportul frecvențelor oscilațiilor.<br/>&emsp;&emsp;Pentru un
+raport inițial al frecvențelor, punctul va descrie o curbă care va acoperi treptat o arie.</p>
+<img src="imagini/lissajoux1.png" style="margin-left: auto; margin-right: auto; display: block;" title="Figuri Lissajoux"><br/>
+<br/>
+<div align="center"><button class="but"><a href="index.html">Oscilații și unde mecanice</a></button>
+<button class="but"><a href="pendulul_elastic.html">Modelare</a></button>
+<button class="but"><a href="pag1.html">Oscilatorul mecanic</a></button>
+<button class="but"><a href="pag3.html">Pendulul gravitațional</a></button>
+<button class="but"><a href="pag4.html">Unde mecanice</a></button>
+<button class="but"><a href="pag5.html">Lucrări de laborator</a></button>
+<button class="but" style="border-radius: 0px 0px 0px 30px;"><a href="verificare.html">Verifică-te!</a></button></div>
+</div>
+<script>endPage();</script>
+</body>
+</html>
