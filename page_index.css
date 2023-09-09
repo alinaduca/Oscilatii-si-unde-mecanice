@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('imagini/background.jpg');
+  background-repeat: no-repeat;
+  display: block;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-family: Verdana;
+  font-weight: normal;
+}
+
+.main-section {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  height: 22vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {                    
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+a:hover {                                   
+  color: white;
+  text-decoration: none;
+}
+
+.verif {
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 10px;
+  font-family: verdana;
+  font-size: 1.07vw;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5 );
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid #3ea69f;
+}
+
+.verif:hover {
+  background-color: #000000;
+  border: 1px solid #000000;
+  color: white;
+}
+
+button { 
+  padding: 5px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  border: none;
+  font-weight: bold;
+  font-family: verdana;
+}
+
+.button1 {
+  font-size: 1.3vw;
+  color: black; 
+  border: 2px solid #206b66;
+  background-color: rgba(255, 255, 255, 0.3 );
+  border-radius: 22px;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.button1:hover {
+  background-color: #3ea69f;
+  border: 2px solid #3ea69f;
+  color: white;
+}
+
+.btn {
+  height: 20vh;
+  width: 11vw;
+  background: none;
+  border-radius: 10vh;
+  color: black;
+  font-size: 1vw;
+}
+
+.button2 {
+  margin-right: 3.8vw;
+  margin-left: 5.7vw;
+}
+
+.button2:hover {
+  background-color: #3ea69f;
+  border: 2px solid #3ea69f;
+  color: white;
+}
+
+.button3 {
+  margin-top: 2vh;
+  margin-left: 4.2vw;
+}
+
+.button3:hover {
+  background-color: #3ea69f;
+  border: none;
+  color: white;
+}
+
+.button4 {
+  margin-top: 2.2vh;
+  margin-left: 1.5vw;
+}
+
+.button4:hover {
+  background-color: #3ea69f;
+  border: none;
+  color: white;
+}
+
+.button5 {
+  margin-top: 2.2vh;
+  margin-left: 1.4vw;
+}
+
+.button5:hover {
+  background-color: #3ea69f;
+  color: white;
+}
+
+.button6 {
+  margin-top: 2.5vh;
+  margin-left: 1.7vw;
+}
+
+.button6:hover {
+  background-color: #3ea69f;
+  color: white;
+}
