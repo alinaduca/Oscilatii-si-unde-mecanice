@@ -1,0 +1,1 @@
+# Oscilatii-si-unde-mecanice
